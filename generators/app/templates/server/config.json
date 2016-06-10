@@ -1,0 +1,5 @@
+{
+  "targetUrl" : "http://some.host.com",
+  "proxyPathPattern": "/api*",
+  "rejectUnsignedCerts": 0
+}
