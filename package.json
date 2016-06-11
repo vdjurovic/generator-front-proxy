@@ -7,10 +7,18 @@
     "generators/router"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "proxy",
+    "frontend"
   ],
+  "license": "MIT",
   "dependencies": {
     "mkdirp": "^0.5.1",
     "yeoman-generator": "^0.23.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdjurovic/generator-front-proxy.git"
+  },
+  "author": "Vladimir Djurovic <vdjurovic@vektorsoft.com> (http://www.vektorsoft.com)"
 }
