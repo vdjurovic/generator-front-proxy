@@ -47,3 +47,13 @@ Finally, to configure proxy server, you should edit file `config.json` in `serve
 Sometimes it's required to set additional data to the request being proxied. For example, you may need to set additional headers, request parameters etc. For this, you can 
 use function `onDecorateRequest()` in file `server/app.js`. There is already a sample of this provided inside the file.
 
+# Additional options
+
+After the project is created, you can create new HTML pages with pre-configured Bower and minifaction hooks. This makes sure that all your HTML files are correctly processed and 
+have correct dependencies.
+
+    yo front-proxy:html home.html --title 'Custom title'
+    
+This will create new HTML file at `src/home.html` with title *Custom title*. If you do not specify title, it defaults to *Untitled*.
+
+
