@@ -48,6 +48,10 @@ var frontProxyGenerator = generators.Base.extend({
     this.fs.copyTpl(this.templatePath('_bower.json'), this.destinationPath(this.appName + '/bower.json'),{appname: this.appName});
     this.fs.copyTpl(this.templatePath('_package.json'), this.destinationPath(this.appName + '/package.json'),{appname: this.appName});
     this.fs.copy(this.templatePath('_gruntfile.js'), this.destinationPath(this.appName + '/Gruntfile.js'));
+    // save settings
+    this.destinationRoot(this.appName);
+    this.config.set('appname', this.appName);
+    this.config.save();
   }
 });
 
